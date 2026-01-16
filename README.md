@@ -1,3 +1,5 @@
+# NOTE: SPINUP TIME MAY TAKE 30+ SECONDS
+
 # Portfolio API
 
 A RESTful API built with NestJS and TypeORM for tracking pet health and habitat data. This backend powers my portfolio website's pet logging system, demonstrating full-stack development capabilities with modern TypeScript tooling.
