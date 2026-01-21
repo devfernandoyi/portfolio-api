@@ -7,6 +7,7 @@ import {
   UpdateDateColumn,
 } from 'typeorm';
 import { PetLog } from '../pet-logs/pet-logs.entity';
+import { CockroachDriver } from 'typeorm/browser/platform/BrowserDisabledDriversDummy.js';
 
 @Entity()
 export class Pet {
@@ -30,6 +31,9 @@ export class Pet {
 
   @Column({ nullable: true })
   about: string;
+
+  @Column({ nullable: true })
+  imageUrl: string;
 
   @CreateDateColumn()
   createdAt: Date;

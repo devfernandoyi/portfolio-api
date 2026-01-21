@@ -11,7 +11,7 @@ export class PetsController {
     return await this.petsService.create(petData);
   }
 
-  @Get() // ← Add this
+  @Get()
   async findAll(): Promise<Pet[]> {
     return await this.petsService.findAll();
   }
